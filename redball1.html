@@ -14,11 +14,50 @@
                 redball.left= redball.left -10;
             }
             function moveup(){
-                redball.top= redball.top -5;
+                redball.top= redball.top -10;
             }
             function movedown(){
-                redball.top= redball.top +5;
+                redball.top= redball.top +10;
             }
+            function movedownright(){
+                redball.top= redball.top +10;
+            }
+            function movesquare(){
+                //slide to the right//
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                //slide down//
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                //slide left//
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                //slide up//
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+            }  
+
+        
         </script>
     </head>
     <body>
@@ -28,5 +67,7 @@
        <button onclick="moveleft()">move left</button>
        <button onclick="moveup()">move up</button>
        <button onclick="movedown()">move down</button>
+       <button onclick="movesquare()">move square</button>
+       <button onclick="movedownright()"move down right</button></button>
     
 </html>
