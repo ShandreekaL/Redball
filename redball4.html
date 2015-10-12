@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #redball{
+               position: absolute;
+                
+            }
+            
+            #button {
+                margin-top:150px;
+            }
+            #paragraph{
+               margin-left:150px;
+            }
+            
+            </style>
+        <script>
+            function pfadeout(){
+                var myparagraph=$("#myp2");
+                myparagraph.fadeOut();
+            }
+            
+            function pfadeIn(){
+                var myparagraph=$("#myp2");
+                myparagraph.fadeIn();
+                }
+                
+            function moveup(){
+                var ball=$("#redball");
+                    ball.animate({"top":"-=10px"},
+                    1000,"linear");
+            }    
+            
+            function movedown(){
+                var ball=$("#redball");
+                ball.animate({
+                    "top":"+=10px"},
+                    1000, "linear")
+            }
+            
+            function moveupright(){
+                var upright=$("#redball");
+                upright.animate({
+                    "top":"-=10px",
+                    "left":"+=10"
+                })
+            }
+            
+            function movedownright(){
+                var downright=$("#redball");
+                downright.animate({
+                    "top":"+=10px",
+                    "left":"-=10px"
+                })
+            }
+          
+     
+            function moveright(){
+                var right=$("#redball");
+                right.animate({
+                    "left":"+=50px"
+                }, "slow")
+            }
+            
+            function moveleft(){
+                var left=$("#redball");
+                left.animate({
+                    "left":"-=50px"
+                }, "linear")
+            }
+            
+            function movedownleft(){
+                var downleft=$("#redball");
+                downleft.animate({
+                    "left":"-=10px",
+                    "top":"+=10px"
+                    
+                })
+            }
+            
+            function moveupleft(){
+                var upleft=$("#redball");
+                upleft.animate({
+                    "left":"-=10px",
+                    "top":"-=10px"
+                })
+            }
+            
+            
+            
+            
+        </script>
+             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+           
+        </head>
+    
+    <body>
+       
+       
+        <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+    
+    <div id="paragraph">
+     <p id="myp1"> My 1st paragraph</p>
+        
+        <p id="myp2">My 2nd Paragraph</p>
+        </div>
+      <div id="button">
+        <button onclick="sayhello()">Hello World</button>
+        <button onclick="moveright()">Move right</button>
+        <button onclick="moveleft()">Move left</button>
+        <button onclick="moveup()">Move up</button>
+        <button onclick="movedown()">Move down</button>
+        <button onclick="moveupright()">Move Up Right</button>
+        <button onclick="movedownright()">Move down right</button>
+        <button onclick="movedownleft()">Move down left</button>
+        <button onclick="moveupleft()">Move up left</button>
+        <button onclick="movesquare()">Move square</button>
+        <button onclick="octagon()">Octagon</button>
+        <button onclick="moveupleft()">Move up left</button>
+        <button onclick="triangle()">Triangle</button>
+        <button onclick="pfadeout()"> Fade Out</button>
+        <button onclick="pfadeIn()">Fade In</button>
+
+        
+       
+        
+         
+        
+        
+        
+
+
+        </div>
+        </body>
+                </html>
+
+        
+        
+        
+      
+        
+         
+        
+        
+        
+
